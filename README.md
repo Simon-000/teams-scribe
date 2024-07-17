@@ -10,7 +10,7 @@ To provide utility app that takes vtt transcripts of project interviews and turn
 
 1. [Create OpenAI account and subscribe to any paid plan](https://auth0.openai.com/u/signup/identifier?state=hKFo2SB6S19WUHZVLS1VYnlUZzc4bmkzbHpnYzJfMXVDdDNIaqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHFtRzRPNm4wTnN1dGswQUJKWGFDaVpWZUloQ1A1dnFno2NpZNkgOGNLeU9saDhJZmFnVjlIUjA4UkZSSVhRZVRCSUZteUM).
 
-2. Set up OpenAI API key using default way described [in the Step 2](https://platform.openai.com/docs/quickstart).
+2. Set up OpenAI API key using default way described [in the Step 2](https://platform.openai.com/docs/quickstart/step-2-set-up-your-api-key).
 
 3. Install required software by opening terminal and executing below in order:
    
