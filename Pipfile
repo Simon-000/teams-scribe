@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+openai = "*"
+jupyterlab = "*"
+pandas = "*"
+webvtt-py = "*"
+voila = ">=0.3"
+xeus-python = ">=0.13.3"
+ipywidgets = "*"
+jupyterlab-widgets = "*"
+easygui = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.14"
