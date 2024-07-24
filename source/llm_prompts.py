@@ -1,6 +1,24 @@
+import easygui
+import tkinter as tk
+from tkinter import ttk
+
+# Ensure tkinter uses a more visually appealing theme
+def set_tkinter_theme():
+    root = tk.Tk()
+    style = ttk.Style(root)
+    # You can choose from 'clam', 'alt', 'default', 'classic'
+    style.theme_use('clam')  
+    root.withdraw()
+
+
 # Define prompt for turning vtt transcripts into case studies
 def grab_vtt_into_case_study_prompt():
-    turn_vtt_into_case_study_prompt = """
+
+    # Set the theme before displaying any EasyGUI windows
+    set_tkinter_theme()
+
+    # Define the default case study prompt i.e. turn project interviews into case studies
+    case_study_prompt = """
 ---
 
 **Prompt for Case Study Generation from Teams Recording Transcript**
@@ -144,4 +162,14 @@ _"[Direct quote from transcript]"_
 ---
 """
 
-    return turn_vtt_into_case_study_prompt
+    # Present the user with the choice
+    choices = ["Custom Prompt", "Case Study Prompt"]
+    choice = easygui.buttonbox("Select a prompt type:", "Prompt Selector", choices)
+
+    # Handle the user's choice
+    if choice == "Case Study Prompt":
+        prompt = case_study_prompt
+    elif choice == "Custom Prompt":
+        prompt = easygui.enterbox("Enter your custom prompt:", "Custom Prompt Input")
+
+    return prompt

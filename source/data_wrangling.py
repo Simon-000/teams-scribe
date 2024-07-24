@@ -15,13 +15,6 @@ from datetime import datetime
 # Pop-up windows
 import easygui
 
-# Add "~/Documents/Git/teams-scribe/source/" to sys.path so we can import our bespoke modules
-module_path = os.path.abspath(os.path.join(os.path.expanduser('~/Documents/Git/teams-scribe/source/')))
-if module_path not in sys.path:
-    sys.path.append(module_path)
-
-# Internal packages
-from llm_prompts import grab_ur_prompts_dictionary
 
 # Define function for reading in vtt files and stripping everything other than conversation itself
 def read_parse_vtt(vtt_file_path):

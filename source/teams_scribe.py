@@ -17,6 +17,9 @@ from openai_api import extract_ur_artifact
 from data_wrangling import read_parse_vtt, select_vtt_file
 from llm_prompts import grab_vtt_into_case_study_prompt
 
+# Suppress the Tkinter deprecation warning
+os.environ['TK_SILENCE_DEPRECATION'] = '1'
+
 # Prompt for turning vtt transcripts into case studies
 turn_vtt_into_case_study_prompt = grab_vtt_into_case_study_prompt()
 

@@ -4,7 +4,7 @@
 cd ~/Documents/Git/teams-scribe
 
 # Make sure we are on the `master` branch
-git checkout master
+git checkout main
 
 # Update the branch
 git pull
